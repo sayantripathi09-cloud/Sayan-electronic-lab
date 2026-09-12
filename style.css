@@ -1,0 +1,668 @@
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HOME
+========================================= */
+
+.home {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    background-image:
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBoSp679zyX6Qw1vkD4x94BJhhGpiMyk0d9Bn_0GQvrA&s=10");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+}
+
+
+/* =========================================
+   DARK OVERLAY
+========================================= */
+
+.overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(5, 10, 20, 0.78),
+            rgba(5, 10, 20, 0.88)
+        );
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding:
+        60px 20px
+        40px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   WEBSITE TITLE
+========================================= */
+
+.title-section {
+
+    margin-bottom: 35px;
+
+}
+
+
+.title-section h1 {
+
+    font-size: clamp(
+        28px,
+        5vw,
+        48px
+    );
+
+    margin-bottom: 10px;
+
+    color: #a78bfa;
+
+    text-shadow:
+        0 0 18px
+        rgba(167,139,250,0.35);
+
+}
+
+
+.title-section p {
+
+    color: #93c5fd;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   CLOCK
+========================================= */
+
+.clock-section {
+
+    margin-bottom: 30px;
+
+}
+
+
+.time {
+
+    font-size: clamp(
+        48px,
+        9vw,
+        95px
+    );
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #f8fafc;
+
+    text-shadow:
+        0 0 20px
+        rgba(255,255,255,0.25);
+
+}
+
+
+.date {
+
+    margin-top: 10px;
+
+    font-size: clamp(
+        18px,
+        3vw,
+        26px
+    );
+
+    color: #7dd3fc;
+
+}
+
+
+/* =========================================
+   ENVIRONMENT DATA
+========================================= */
+
+.environment {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin:
+        0 auto 45px;
+
+    align-items: center;
+
+    justify-items: center;
+
+}
+
+
+.environment-item {
+
+    font-size: clamp(
+        15px,
+        2.5vw,
+        20px
+    );
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   TEMPERATURE
+========================================= */
+
+.environment-item:nth-child(1) {
+
+    color: #fb923c;
+
+}
+
+
+.environment-item:nth-child(1) span {
+
+    color: #fdba74;
+
+}
+
+
+/* =========================================
+   HUMIDITY
+========================================= */
+
+.environment-item:nth-child(2) {
+
+    color: #38bdf8;
+
+}
+
+
+.environment-item:nth-child(2) span {
+
+    color: #67e8f9;
+
+}
+
+
+/* =========================================
+   PRESSURE
+========================================= */
+
+.environment-item:nth-child(3) {
+
+    color: #4ade80;
+
+}
+
+
+.environment-item:nth-child(3) span {
+
+    color: #86efac;
+
+}
+
+
+/* =========================================
+   MAIN OPTIONS
+========================================= */
+
+.menu {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+   /* =========================================
+   MENU
+========================================= */
+
+.menu {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   MENU CARD
+   GLASS BOX REMOVED
+========================================= */
+
+.menu-card {
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    gap: 15px;
+
+    width: 100%;
+
+    padding: 15px 10px;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+
+    box-shadow: none;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.menu-card:hover {
+
+    transform:
+        translateY(-3px);
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+    opacity: 0.85;
+
+}
+
+
+/* =========================================
+   MENU ICON
+========================================= */
+
+.menu-icon {
+
+    font-size: 32px;
+
+}
+
+
+/* =========================================
+   MENU TITLE
+========================================= */
+
+.menu-title {
+
+    flex: 1;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   MENU TEXT COLORS
+========================================= */
+
+.menu-card:nth-child(1) .menu-title {
+
+    color: #c084fc;
+
+}
+
+
+.menu-card:nth-child(2) .menu-title {
+
+    color: #facc15;
+
+}
+
+
+.menu-card:nth-child(3) .menu-title {
+
+    color: #60a5fa;
+
+}
+
+
+.menu-card:nth-child(4) .menu-title {
+
+    color: #fb7185;
+
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.arrow {
+
+    font-size: 25px;
+
+    color: #67e8f9;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .menu {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 10px;
+
+    }
+
+
+    .menu-card {
+
+        padding: 12px 5px;
+
+    }
+
+}
+
+/* =========================================
+   MENU ICON
+========================================= */
+
+.menu-icon {
+
+    font-size: 32px;
+
+}
+
+
+/* =========================================
+   MENU TITLE
+========================================= */
+
+.menu-title {
+
+    flex: 1;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   INDIVIDUAL MENU TEXT COLORS
+========================================= */
+
+.menu-card:nth-child(1) .menu-title {
+
+    color: #c084fc;
+
+}
+
+
+.menu-card:nth-child(2) .menu-title {
+
+    color: #facc15;
+
+}
+
+
+.menu-card:nth-child(3) .menu-title {
+
+    color: #60a5fa;
+
+}
+
+
+.menu-card:nth-child(4) .menu-title {
+
+    color: #fb7185;
+
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.arrow {
+
+    font-size: 25px;
+
+    color: #67e8f9;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    margin-top: 55px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .content {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    .environment {
+
+        gap: 12px;
+
+    }
+
+
+    .environment-item {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .content {
+
+        padding-top: 40px;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+
+    /* Keep 3 parameters horizontal */
+
+    .environment {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 5px;
+
+        width: 100%;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .environment-item {
+
+        font-size: 12px;
+
+    }
+
+
+    .menu {
+
+        grid-template-columns:
+            1fr;
+
+        max-width: 500px;
+
+    }
+
+
+    .menu-card {
+
+        padding: 19px;
+
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .environment {
+
+        gap: 2px;
+
+    }
+
+
+    .environment-item {
+
+        font-size: 10px;
+
+    }
+
+}

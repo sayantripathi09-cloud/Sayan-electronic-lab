@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sayan's Electronics Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HOME ================= -->
+
+    <main class="home">
+
+        <!-- Background Overlay -->
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <!-- WEBSITE TITLE - TOP -->
+
+            <section class="title-section">
+
+                <h1>
+                    Sayan's Electronics Lab
+                </h1>
+
+                <p>
+                    Electronics • Microcontrollers • Robotics
+                </p>
+
+            </section>
+
+
+            <!-- REAL TIME CLOCK -->
+
+            <section class="clock-section">
+
+                <div id="time" class="time">
+                    12:00:00 AM
+                </div>
+
+                <div id="date" class="date">
+                    Monday, January 1, 2026
+                </div>
+
+            </section>
+
+
+            <!-- MAIN OPTIONS -->
+
+            <section class="menu">
+
+                <button class="menu-card"
+                        onclick="window.location.href='projects.html'">
+
+                    <span class="menu-icon">
+                        🔧
+                    </span>
+
+                    <span class="menu-title">
+                        Projects
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="menu-card"
+                        onclick="openSection('todo')">
+
+                    <span class="menu-icon">
+                        📝
+                    </span>
+
+                    <span class="menu-title">
+                        To-Do List
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="menu-card"
+                        onclick="openSection('pdf')">
+
+                    <span class="menu-icon">
+                        📄
+                    </span>
+
+                    <span class="menu-title">
+                        PDF Library
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="menu-card"
+                        onclick="openSection('video')">
+
+                    <span class="menu-icon">
+                        🎥
+                    </span>
+
+                    <span class="menu-title">
+                        Videos
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <footer>
+            </footer>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

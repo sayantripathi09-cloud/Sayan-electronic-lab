@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #050816;
+
+    color: white;
+
+    min-height: 100vh;
+
+}
+
+
+.details-page {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 30px 20px 60px;
+
+}
+
+
+.back-button {
+
+    background: transparent;
+
+    border: none;
+
+    color: #7dd3fc;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    margin-bottom: 30px;
+
+}
+
+
+.project-details {
+
+    text-align: center;
+
+}
+
+
+.project-details h1 {
+
+    font-size: clamp(30px, 6vw, 50px);
+
+    color: #c084fc;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================================
+   PROJECT OPTIONS
+========================================= */
+
+.project-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 40px;
+
+}
+
+
+.project-option {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 22px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(125, 211, 252, 0.15),
+            rgba(192, 132, 252, 0.18)
+        );
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.15);
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+
+}
+
+
+.project-option:hover {
+
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(125, 211, 252, 0.6);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(14, 165, 233, 0.28),
+            rgba(168, 85, 247, 0.30)
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(125, 211, 252, 0.15);
+
+}
+
+
+.project-option span:first-child {
+
+    font-size: 26px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .details-page {
+
+        padding: 20px 15px 40px;
+
+    }
+
+
+    .project-options {
+
+        margin-top: 30px;
+
+        gap: 15px;
+
+    }
+
+
+    .project-option {
+
+        max-width: 100%;
+
+        padding: 16px 18px;
+
+        font-size: 17px;
+
+    }
+
+}

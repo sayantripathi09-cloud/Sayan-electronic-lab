@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(5, 8, 22, 0.72),
+            rgba(5, 8, 22, 0.82)
+        ),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* =========================================
+   PDF PAGE
+========================================= */
+
+.pdf-page {
+    min-height: 100vh;
+    padding: 30px 20px 60px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.pdf-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+
+.pdf-header h1 {
+    font-size: clamp(30px, 5vw, 48px);
+
+    background:
+        linear-gradient(
+            90deg,
+            #7dd3fc,
+            #c084fc,
+            #f472b6
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.pdf-header p {
+    margin-top: 8px;
+
+    color: #93c5fd;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-button {
+    border: 1px solid
+        rgba(125, 211, 252, 0.35);
+
+    background:
+        rgba(125, 211, 252, 0.08);
+
+    color: #7dd3fc;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.back-button:hover {
+    background:
+        rgba(125, 211, 252, 0.18);
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================================
+   PDF CONTAINER
+========================================= */
+
+.pdf-container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   PDF CARD
+========================================= */
+
+.pdf-card {
+    width: 100%;
+
+    max-width: 600px;
+
+    padding: 4px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(125, 211, 252, 0.12),
+            rgba(192, 132, 252, 0.12)
+        );
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border 0.3s ease;
+}
+
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(125, 211, 252, 0.65);
+
+    box-shadow:
+        0 10px 35px
+        rgba(125, 211, 252, 0.15);
+}
+
+
+/* =========================================
+   PDF LINK
+========================================= */
+
+.pdf-link {
+    width: 100%;
+
+    min-height: 80px;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(14, 165, 233, 0.22),
+            rgba(168, 85, 247, 0.25),
+            rgba(236, 72, 153, 0.20)
+        );
+
+    transition: 0.3s;
+}
+
+
+.pdf-link:hover {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(14, 165, 233, 0.38),
+            rgba(168, 85, 247, 0.40),
+            rgba(236, 72, 153, 0.32)
+        );
+
+    transform: scale(1.02);
+
+    color: white;
+}
+
+
+.pdf-icon {
+    font-size: 28px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .pdf-page {
+        padding: 25px 15px 40px;
+    }
+
+    .pdf-header {
+        align-items: center;
+        text-align: center;
+    }
+
+    .pdf-container {
+        gap: 15px;
+    }
+
+    .pdf-link {
+        min-height: 75px;
+
+        padding: 16px 18px;
+
+        font-size: 17px;
+    }
+
+    .pdf-icon {
+        font-size: 25px;
+    }
+}
